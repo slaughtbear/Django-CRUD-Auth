@@ -1,0 +1,22 @@
+# Entorno virtual
+venv/
+env/
+
+# Archivos y carpetas generados automáticamente
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+*.log
+
+# Archivos de migraciones de Django
+*/migrations/
+!*/migrations/__init__.py
+
+# Archivos estáticos generados
+staticfiles/
+static/
+media/
+
+# Archivos de configuración de IDEs/editors
+.vscode/
