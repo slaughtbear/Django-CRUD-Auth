@@ -20,3 +20,17 @@ media/
 
 # Archivos de configuración de IDEs/editors
 .vscode/
+
+# Node modules (si usas npm o yarn para administrar paquetes de front-end)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Archivos de compilación
+*.egg-info/
+dist/
+build/
+
+# CSS de salida generado por Tailwind
+tasks/static/css/output.css
