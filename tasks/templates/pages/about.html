@@ -1,0 +1,43 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+  <div class="mx-auto max-w-screen-2xl px-4 py-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
+
+      <!-- Image Section -->
+      <div class="relative z-10 lg:py-16">
+        <div class="relative h-64 sm:h-80 lg:h-full">
+          <img 
+            src="{% static 'svgs/PythonDJ.svg' %}" 
+            alt="PythonDJ by creatio" 
+            class="absolute inset-0 h-full w-full object-contain" 
+          />
+        </div>
+      </div>
+
+      <!-- Content Section -->
+      <div class="relative flex items-center">
+        <span
+          class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16"
+        ></span>
+
+        <div class="p-8 sm:p-16 lg:p-24">
+          <h2 class="text-emerald-700 text-2xl font-bold sm:text-3xl">
+            Acerca de
+          </h2>
+
+          <p class="mt-4 text-gray-600">
+            Esta aplicación tiene el objetivo de crear una aplicación web con Django utilizando las herramientas que este framework provee, además de presentar diversas habilidades involucradas en su desarrollo.
+          </p>
+          <a class="mt-4 inline-block rounded bg-emerald-700 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-800 hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-emerald-500 sm:w-auto" href="https://github.com/slaughtbear/Django-CRUD-Auth">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}

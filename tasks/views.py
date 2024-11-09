@@ -5,6 +5,9 @@ from .models import Project, Task # M O D E L O S
 def index(request):
     return render(request, 'index.html')
 
+def about(request):
+    return render(request, 'pages/about.html')
+
 def projects(request): # Renderiza proyectos
     projects = Project.objects.filter(user=request.user) # Filtrando sólo los proyectos que pertenecen al usuario que los creo
     return render(request, 'pages/projects/projects.html', { # Renderizado de la página donde se van a mostrar los proyectos
